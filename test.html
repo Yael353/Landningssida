@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the main menu */
+        .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        /* Style the menu items */
+        .menu-item {
+            position: relative;
+            margin-right: 20px;
+        }
+
+        /* Hide the submenu by default */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        /* Show the submenu when the menu item is hovered */
+        .menu-item:hover .submenu {
+            display: block;
+        }
+
+        /* Style the submenu items */
+        .submenu-item {
+            padding: 5px 0;
+        }
+
+        .submenu-item a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+
+        .submenu-item:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu-item">
+            <a href="#">Item 1</a>
+            <ul class="submenu">
+                <li class="submenu-item"><a href="#">Subitem 1</a></li>
+                <li class="submenu-item"><a href="#">Subitem 2</a></li>
+                <li class="submenu-item"><a href="#">Subitem 3</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="#">Item 2</a>
+            <ul class="submenu">
+                <li class="submenu-item"><a href="#">Subitem 4</a></li>
+                <li class="submenu-item"><a href="#">Subitem 5</a></li>
+                <li class="submenu-item"><a href="#">Subitem 6</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="#">Item 3</a>
+            
+        </li>
+    </ul>
+</body>
+</html>
